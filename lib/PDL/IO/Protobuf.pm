@@ -6,7 +6,7 @@ use warnings;
 use Carp qw(croak);
 use Exporter 'import';
 
-our $VERSION = '0.01';
+our $VERSION = '0.011';
 
 our @EXPORT = qw(
     rprotobuf
@@ -271,6 +271,13 @@ C<int64> =E<gt> C<longlong>, C<bool> =E<gt> C<byte>).
 =head1 SEE ALSO
 
 L<PDL>, L<Protobuf>, L<Protobuf::Message>, L<Protobuf::Arena>
+
+=head1 TYPES
+
+Supports real numeric PDL types mapped to Protocol Buffers scalar wire types
+(C<float>, C<double>, C<long>, C<ulong>, C<longlong>, C<ulonglong>, C<byte>,
+C<short>). Complex numbers are not natively represented in Protocol Buffers
+scalar fields.
 
 =head1 AUTHOR
 

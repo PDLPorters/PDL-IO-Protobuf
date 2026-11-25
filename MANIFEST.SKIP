@@ -8,3 +8,11 @@
 \.tar\.gz$
 ~$
 \.bak$
+^\.github/
+^\.gitignore$
+^dot-git/
+^_alien/
+\.bs$
+\.o$
+\.xsc$
+^lib/.*\.c$
